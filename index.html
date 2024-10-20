@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade Cafe Links</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      background-color: #ffffff; /* Simple white background */
+      padding: 20px;
+    }
+
+    .logo {
+      width: 84%; /* 20% larger than buttons (70% * 1.2 = 84%) */
+      max-width: 480px; /* Increased max width */
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70%; /* 70% of screen width */
+      max-width: 400px;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.1s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .instagram {
+      background-color: #e1306c;
+    }
+
+    .menu {
+      background-color: #2196F3;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .logo-icon {
+      width: 24px; /* Small size for Instagram icon */
+      height: 24px;
+      fill: white;
+    }
+
+    .google-link {
+      display: flex;
+      justify-content: center;
+      width: 70%; /* Match button width */
+      max-width: 400px;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .google-logo {
+      width: 70%; /* 70% of google-link container width */
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .google-link:hover .google-logo {
+      transform: scale(1.05);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .button, .google-link {
+        width: 80%; /* 80% of screen width on small devices */
+      }
+      .logo {
+        width: 96%; /* 20% larger than 80% */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Arcade logo with 20% larger width than buttons -->
+  <img src="arcade_logo.png" alt="Arcade Logo" class="logo">
+
+  <a href="https://www.instagram.com/arcadecafepub/" class="button instagram" target="_blank">
+    <img src="insta_logo.png" alt="Instagram Logo" class="logo-icon">
+    Instagram
+  </a>
+
+  <a href="https://klika.ist/places/arcade-cafe-bistro-pub" class="button menu" target="_blank">
+    🍽️ Menü 🥂
+  </a>
+
+  <!-- Centered and slightly smaller Google logo -->
+  <a href="https://search.google.com/local/writereview?placeid=ChIJH2V5xBG3yhQR3ofCBucKNz0" target="_blank" class="google-link">
+    <img src="google-logo.png" alt="Google Logo" class="google-logo">
+  </a>
+
+</body>
+</html>
+
